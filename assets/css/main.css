@@ -136,11 +136,12 @@ input, select, textarea {
 
 } */
 #four .inner h3 {
-	color: red;
 	font-size: 2em;
 	margin-top: -1vw;
 }
-
+#four .inner p, #four .inner a, #four .inner li {
+	color: #ba9e6f;
+}
 /* Basic */
 
 	@-ms-viewport {
@@ -2506,9 +2507,10 @@ input, select, textarea {
 /**********************************************/
 /*******************IMAGES**********************/
 /**********************************************/
-	#cohkImage {
+	#cohkPic {
 		background-repeat: no-repeat;
 		background-size:auto;
+		margin-bottom: 2.5em;
 	}
 	#firstImage, #thirdImage{
 		position: relative;
@@ -2785,13 +2787,20 @@ input, select, textarea {
 	ul.contact {
 		list-style: none;
 		padding: 0;
+		border: red dotted 3px;
 	}
 	
-	ul.contact li {
+	ul.contact li, ul.contact a, .contact span {
 			text-decoration: none;
-			margin: 2.5em 0 0 0;
-			padding: 0 0 0 3.25em;
+			margin: 1em 0 0 1.5em;
 			position: relative;
+		}
+		address {
+			text-align:center;
+		}
+		address > span {
+			text-align:left; 
+			display:inline-block;
 		}
 
 			ul.contact li:before {
@@ -3713,17 +3722,17 @@ input, select, textarea {
 		display: -ms-flex;
 		display: flex;
 		justify-content: center;
-		text-align:start;
+		text-align: start;
 		-moz-flex-direction: row;
 		-webkit-flex-direction: row;
 		-ms-flex-direction: row;
-		flex-direction: row;
+		flex-direction: column;
 		-moz-flex-wrap: wrap;
 		-webkit-flex-wrap: wrap;
 		-ms-flex-wrap: wrap;
 		flex-wrap: wrap;
-		margin: -2em 0 0 3em;
-		width: 90%;
+		margin: -5em 0 0 3em;
+		width: 90vw;
 	}
 
 		#footer .inner > * {
@@ -3734,12 +3743,23 @@ input, select, textarea {
 			margin: 0 1em 0 0;
 			width: calc(40% - 1.5em);
 		}
-
-		#footer .inner .contact {
+		#contactContainer {
+			width: 100%;
 			display: flex;
 			justify-content: center;
+
 		}
 
+		#footer .inner .contact {
+			padding-top: 4vh;
+			height: 35vh;
+			width: 45em;
+			word-wrap: break-word;
+			display: flex;
+			flex-flow: column wrap;
+			justify-content: flex-start;
+			align-items: baseline;
+		}
 		#footer .inner .copyright {
 			border-top: solid 2px rgba(255, 255, 255, 0.125);
 			list-style: none;
