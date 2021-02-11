@@ -77,8 +77,42 @@ input, select, textarea {
 /*********************************/
 /**************ADDED**************/
 /*********************************/
-#majorParagraph1, #majorParagraph2 {
-	margin: 0 3vw;
+.list {
+	list-style-type: none;
+}
+.footerTextLarge {
+	font-size: 1.75em;
+	color:#BA9E6F;
+	font-family: 'Big Shoulders Stencil Text', cursive;;
+	-webkit-text-stroke: .75px black;
+}
+.footerTextNormal {
+	font-size: 1.25em;
+	color: #BA9E6F;
+	opacity: 1;
+	font-family: 'BenchNine', sans-serif;
+	letter-spacing: normal;
+	line-height: 1.5;
+	-webkit-text-stroke: .25px black;
+}
+.footerTextSmall {
+	font-size: 1.25em;
+	font-weight: bolder;
+	color: #BA9E6F;
+	-webkit-text-stroke: .25px black;
+	opacity: 1;
+	font-family: 'BenchNine', sans-serif;
+	letter-spacing: normal;
+	line-height: 1.5;
+}
+#sendMessageBtn {
+	color: #BA9E6F
+}
+#majorParagraph1, #majorParagraph2, #majorParagraph3 {
+	margin: 3vh 3vw;
+}
+.listElement {
+	margin: 2vh 4vw;
 }
 #four .inner p, #four .inner h2, #four .inner h3,#four .inner a {
 	color: #BA9E6F;
@@ -86,6 +120,9 @@ input, select, textarea {
 .content p {
 	display: flex;
 	text-align: start;
+	color:#4b335c;
+	opacity: 1;
+	font-size: 1.5em;
 }
 
 #footer .inner h2, #footer .inner label {
@@ -99,7 +136,8 @@ input, select, textarea {
 
 } */
 #four .inner h3 {
-	font-size: 2vw;
+	color: red;
+	font-size: 2em;
 	margin-top: -1vw;
 }
 
@@ -150,20 +188,32 @@ input, select, textarea {
 /* Type */
 
 	body, input, select, textarea {
-		color:hsl(275,29%,28%);
-		font-family: 'Special Elite', cursive;
+		color:#4b335c;
+		font-family: 'BenchNine', sans-serif;
 		font-size: 16.5pt;
 		font-weight: bold;
 		line-height: 1.5;
 	}
 
 		@media screen and (max-width: 1680px) {
-/* IMORTANT  */
+/* IMPORTANT  */
 			body, input, select, textarea {
-				font-size: 1vw;
+				font-size: 1em;
 			}
 			#footer {
 				margin: 0;
+				position: relative;
+				top: -10vh;
+			}
+			#footer .contact {
+				display: flex;
+				flex-flow: column wrap;
+				height: 35vh;
+				width: 50vw !important;
+				text-align: start;
+			}
+			#footer .contact li {
+				margin: 2vh 1vw
 			}
 			#banner {
 				height: 100vh;
@@ -297,7 +347,7 @@ input, select, textarea {
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: hsl(275,29%,28%);
+		color:#4b335c;
 		font-family: 'Big Shoulders Stencil Text', cursive;
 		letter-spacing: normal;
 		margin: 5vh 0 1em 0;
@@ -2315,7 +2365,7 @@ input, select, textarea {
 			cursor: pointer;
 			display: inline-block;
 			font-size: 1em;
-			font-family: 'Special Elite', cursive;
+			font-family: 'BenchNine', sans-serif;
 			text-transform: none;
 			letter-spacing: normal;
 			font-weight: 300;
@@ -2456,12 +2506,17 @@ input, select, textarea {
 /**********************************************/
 /*******************IMAGES**********************/
 /**********************************************/
+	#cohkImage {
+		background-repeat: no-repeat;
+		background-size:auto;
+	}
 	#firstImage, #thirdImage{
-		margin: 1vh 0 1vh 3vw;
-
+		position: relative;
+		right: -4vw;
 	}
 	#secondImage{
-		margin: 0 5vw 0 -5vw;
+		position: relative;
+		right: 4vw;
 	}
 	.gridImage {
 		-webkit-transform: scale(1);
@@ -2474,12 +2529,13 @@ input, select, textarea {
 		display: inline-block;
 		position: relative;
 		border-radius: 50%;
-		width: 30vw;
+		margin: 2vh 2vw;
+		width: 26vw;
 		min-width: 10%;
-		max-width: 70%;
+		max-width: 30vw;
 		object-fit: cover;
 		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-	}
+	} 
 	.image {
 		border: 0;
 		display: inline-block;
@@ -2730,8 +2786,8 @@ input, select, textarea {
 		list-style: none;
 		padding: 0;
 	}
-
-		ul.contact li {
+	
+	ul.contact li {
 			text-decoration: none;
 			margin: 2.5em 0 0 0;
 			padding: 0 0 0 3.25em;
@@ -2856,6 +2912,9 @@ input, select, textarea {
 	input[type="button"],
 	button,
 	.button {
+		display: flex;
+		text-align: center;
+		justify-content: center;
 		-moz-appearance: none;
 		-webkit-appearance: none;
 		-ms-appearance: none;
@@ -3011,7 +3070,6 @@ input, select, textarea {
 			margin: 1.5em 3em 1.5em 0;
 			width: calc(50% - 1.5em);
 		}
-
 			.features article:nth-child(2n) {
 				margin-right: 0;
 			}
@@ -3024,6 +3082,7 @@ input, select, textarea {
 				margin-top: -1.75em;
 				position: relative;
 				width: calc(100% + 3.5em);
+				height: auto;
 			}
 
 				.features article .image img {
@@ -3126,7 +3185,7 @@ input, select, textarea {
 		overflow: auto;
 		top: 0px;
 		left: 0px;
-		background: rgba(0, 0, 0, 0.25);
+		background: rgba(0, 0, 0, 0.3);
 	}
 
 /* Banner */
@@ -3203,6 +3262,7 @@ input, select, textarea {
 
 			#banner {
 				padding: 7em 0 8.25em 0;
+				height: 100vh;
 			}
 
 		}
@@ -3213,11 +3273,12 @@ input, select, textarea {
 				padding: 12em 3em 12.375em 3em ;
 				margin-bottom: -4.75em;
 				position: relative;
-				top: -8vh;
+				top: -4vh;
+				height: 100vh;
 				
 			}
 			#banner p {
-				font-size: 5vw;
+				font-size: 4em;
 			}
 				#banner .inner {
 					width: 100%;
@@ -3229,36 +3290,18 @@ input, select, textarea {
 		}
 		@media screen and (max-width: 838px) {
 			#banner h2 {
-				font-size: 10vw;
+				font-size: 8em;
 			}
 		}
 
 		@media screen and (max-width: 736px) {
-
-			#banner {
-				padding: 5em 2em 4.25em 2em ;
-				margin-bottom: -2.5em;
-				height: 32em;
-			}			
-			#banner .logo {
-				margin: 0 0 1em 0;
-			}
-			
-			#banner .logo .icon {
-				font-size: 1.5em;
-			}
-			
 			#banner h2 {
-				position: relative;
-				top: -90px;
-				margin: 1.5em 0 0 0;
-				font-size: 12vw;
-				font-weight: 800px;
-					}
+			font-size: 6.5em;
+			}
 					
-					#banner p {
-					font-size: 6vw;
-				}
+			#banner p {
+				font-size: 3em;
+			}
 
 		}
 
@@ -3693,8 +3736,8 @@ input, select, textarea {
 		}
 
 		#footer .inner .contact {
-			width: calc(50% - 1.5em);
-			margin-left: 3em;
+			display: flex;
+			justify-content: center;
 		}
 
 		#footer .inner .copyright {
@@ -3735,6 +3778,17 @@ input, select, textarea {
 			margin-top: -15em;
 			padding-top: 6.5em;
 		}
+		.mainImage {
+			display: inline-block;
+			position: relative;
+			border-radius: 50%;
+			margin: 2vh 2vw;
+			width: 26vw;
+			min-width: 10%;
+			max-width: 30vw;
+			object-fit: cover;
+			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+		} 
 	}
 
 	@media screen and (max-width: 980px) {

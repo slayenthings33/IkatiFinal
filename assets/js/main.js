@@ -27,9 +27,9 @@
 			}, 100);
 		});
 
-		window.onload = function() {
-			document.getElementById("cradle").play();
-		}
+		// window.onload = function() {
+		// 	document.getElementById("cradle").play();
+		// }
 
 	// Header.
 		if ($banner.length > 0
