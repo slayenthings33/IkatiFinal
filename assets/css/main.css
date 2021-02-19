@@ -77,6 +77,10 @@ input, select, textarea {
 /*********************************/
 /**************ADDED**************/
 /*********************************/
+#addressContainer {
+	text-align: center;
+	margin: 0;
+}
 .list {
 	list-style-type: none;
 }
@@ -192,7 +196,7 @@ color: #BA9E6F;
 				display: flex;
 				flex-flow: column wrap;
 				height: 35vh;
-				width: 50vw !important;
+				width: 100vw;
 				text-align: start;
 			}
 			#footer .contact li {
@@ -3596,8 +3600,11 @@ color: #BA9E6F;
 				}
 				.wrapper.spotlight.style3 {
 					background-color: #945DBA;
-					height: 20em;
+					height: 27em !important;
 					margin-bottom: -1px;
+				}
+				.wrapper.spotlight.style1 {
+					height: 27em;
 				}
 		}
 
@@ -3839,8 +3846,9 @@ color: #BA9E6F;
 	@media screen and (max-width: 980px) {
 
 		#footer {
-			margin-top: -2.5em;
+			margin-top: -8vh;
 			padding-top: 3em;
+			height: 50vh;
 		}
 		
 		#footer .inner {
@@ -3852,19 +3860,30 @@ color: #BA9E6F;
 				width: 100%;
 			}
 
-				#footer .inner form {
-					width: 50%;
-					margin: 0 0 4em 0;
-				}
+		#footer .inner form {
+			width: 50%;
+			margin: 0 0 4em 0;
+		}
 
-				#footer .inner .contact {
-					width: 40%;
-					margin: 0 0 4em 1em;
-					
-				}
-				#footer .inner .copyright {
-					margin: 1em 0 1em 0;
-				}
+		#footer .inner .contact {
+			width: 100%;
+			margin: 0 0 4em 1em;
+			
+		}
+		#footer .inner .copyright {
+			margin: 0;
+		}
+		#contactContainer {
+			height: 30vh;
+			width: auto;
+			display: flex;
+			flex-direction: column;
+			/* border: red dotted 2px; */
+			/* align-items: center; */
+			/* align-content: center; */
+			text-align: center;
+
+		}
 
 	}
 
@@ -3900,7 +3919,8 @@ color: #BA9E6F;
 			text-align: center;
 			justify-content: center;
 			position: relative;
-			top: 1vh;
+			top: -4vh;
+			height: 100vh;
 		}
 		#footer .inner h2 {
 			font-size: 3em;
@@ -3913,6 +3933,7 @@ color: #BA9E6F;
 			flex-direction: row;
 			align-content: flex-start;
 			justify-content: flex-start;
+
 		}
 		#page-wrapper{
 			overflow-x: hidden;
@@ -3933,13 +3954,15 @@ color: #BA9E6F;
 			font-size: 1.4em;
 		}
 		#footer .inner .copyright li {
+			position: relative;
+			top: 20vh;
 			border-left: 0;
 			display: block;
-			margin: 1em 0 0 0;
+			margin: 1em 0;
 			padding-left: 0;
 		}
-		#footer .inner .copyright li:first-child {
-			margin-top: 0;
+		#contactContainer {
+			margin: 2em 0;
 		}
 
 	}
