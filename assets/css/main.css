@@ -123,6 +123,8 @@ color: #BA9E6F;
 	font-size: 1.5em;
 }
 .contactCollumn {
+	position: relative;
+	left: -12vw;
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
@@ -193,6 +195,7 @@ color: #BA9E6F;
 				top: -10vh;
 			}
 			#footer .contact {
+				margin: 2em;
 				display: flex;
 				flex-flow: column wrap;
 				height: 35vh;
@@ -337,7 +340,7 @@ color: #BA9E6F;
 		color:#4b335c;
 		font-family: 'Big Shoulders Stencil Text', cursive;
 		letter-spacing: normal;
-		margin: 5vh 0 1em 0;
+		margin: 0vh 0 1em 0;
 		text-transform: uppercase;
 	}
 
@@ -3176,7 +3179,7 @@ color: #BA9E6F;
 		overflow: auto;
 		top: 0px;
 		left: 0px;
-		background: rgba(0, 0, 0, 0.65);
+		background: rgba(0, 0, 0, 0.5);
 	}
 
 /* Banner */
@@ -3739,7 +3742,7 @@ color: #BA9E6F;
 		display: -ms-flex;
 		display: flex;
 		justify-content: center;
-		text-align: start;
+		text-align: center;
 		-moz-flex-direction: row;
 		-webkit-flex-direction: row;
 		-ms-flex-direction: row;
@@ -3749,6 +3752,7 @@ color: #BA9E6F;
 		-ms-flex-wrap: wrap;
 		flex-wrap: wrap;
 		width: 65vw;
+		/* border: red dotted 3px; */
 	}
 
 		#footer .inner > * {
@@ -3808,17 +3812,17 @@ color: #BA9E6F;
 		#footer .inner a, #footer .inner p, #footer .inner .contact li {
 			color: #BA9E6F;
 			word-wrap: break-word;
-			font-size: 1.3em;
+			font-size: 1.6em;
 			-webkit-text-stroke: 1px black;
 		}
 		#footer .inner h2 {
-			font-size: 2.25em;
+			font-size: 5em;
 			color:#BA9E6F;
 			font-family: 'Big Shoulders Stencil Text', cursive;;
 			-webkit-text-stroke: 1px black;
 		}
 		#footer #footerTextLarge {
-			font-size: 2em;
+			font-size: 3em;
 			margin: 1vh 3vw;
 		}
 
