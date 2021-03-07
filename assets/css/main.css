@@ -3694,10 +3694,12 @@ color: #BA9E6F;
 				height: auto;
 				width: 15em;
 				margin: 0;
+				padding: 1em;
 				max-width: 20em;
 			}
 			#firstImage, #thirdImage {
 				margin: 0;
+				padding: 1em;
 				position: relative;
 				left: -18vw; 
 				bottom: -4vh;
