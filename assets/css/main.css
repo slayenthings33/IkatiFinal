@@ -236,7 +236,7 @@ color: #BA9E6F;
 				font-size: 4vw;
 			}
 			#one, #two, #three {
-				height: 58vh;
+				height: 42vh;
 			}
 		}
 
@@ -3174,7 +3174,7 @@ color: #BA9E6F;
 		transition: filter 0.25s ease;
 		z-index: 1;
 		height: 100%;
-		width: 100%;
+		width: 100vw;
 		position: fixed;
 		overflow: auto;
 		top: 0px;
@@ -3242,7 +3242,7 @@ color: #BA9E6F;
 			filter: blur(0);
 			opacity: 1;
 			font-family: 'Big Shoulders Display', cursive;
-			font-size: 3.5vw;
+			font-size: 3.5em;
 			letter-spacing: normal;
 			line-height: 2;
 			text-transform: uppercase;
@@ -3290,11 +3290,11 @@ color: #BA9E6F;
 
 		@media screen and (max-width: 736px) {
 			#banner h2 {
-			font-size: 6.5em;
+			font-size: 8em;
 			}
 					
 			#banner p {
-				font-size: 3em;
+				font-size: 4em;
 			}
 
 		}
@@ -3693,16 +3693,13 @@ color: #BA9E6F;
 				right: -18vw;
 				height: auto;
 				width: 15em;
-				margin: 0;
-				padding: 1em;
+				margin: 1em;
 				max-width: 20em;
 			}
 			#firstImage, #thirdImage {
-				margin: 0;
-				padding: 1em;
+				margin: 1em;
 				position: relative;
 				left: -18vw; 
-				bottom: -4vh;
 				height: auto;
 				max-width: 20em;
 				width: 15em;
@@ -3725,11 +3722,12 @@ color: #BA9E6F;
 
 	#footer {
 		position: relative;
-		top: -10vh;
+		top: -5vh;
 		display: flex;
 		flex-direction: column;
 		height: 60vh;
 		width: 100%;
+		text-align: center;
 		align-items: center;
 		padding: 2vh 4vw 0 4vw; 
 		margin: 0;
@@ -3818,14 +3816,16 @@ color: #BA9E6F;
 			-webkit-text-stroke: 1px black;
 		}
 		#footer .inner h2 {
-			font-size: 5em;
+			font-size: 3.5em;
 			color:#BA9E6F;
+			margin-bottom: 2vh;
 			font-family: 'Big Shoulders Stencil Text', cursive;;
 			-webkit-text-stroke: 1px black;
 		}
 		#footer #footerTextLarge {
-			font-size: 3em;
-			margin: 1vh 3vw;
+			font-size: 2.5em;
+			margin: 1vh 1vw 4vh;
+			/* color: red; */
 		}
 
 	@media screen and (max-width: 1280px) {
@@ -3834,7 +3834,7 @@ color: #BA9E6F;
 		}
 		#footer {
 			position: relative;
-			margin-top: -15em;
+			margin-top: -8em;
 			padding-top: 6.5em;
 		}
 		.mainImage {
@@ -3854,8 +3854,10 @@ color: #BA9E6F;
 
 		#footer {
 			margin-top: -8vh;
-			padding-top: 3em;
 			height: 50vh;
+			display: flex;
+			text-align: center;
+			justify-content: flex-start;
 		}
 		
 		#footer .inner {
@@ -3866,11 +3868,11 @@ color: #BA9E6F;
 				align-items: center;
 				width: 100%;
 			}
-
+/* 
 		#footer .inner form {
 			width: 50%;
 			margin: 0 0 4em 0;
-		}
+		} */
 
 		#footer .inner .contact {
 			width: 100%;
@@ -3884,12 +3886,11 @@ color: #BA9E6F;
 			height: 30vh;
 			width: auto;
 			display: flex;
+			margin: 1em;
 			flex-direction: column;
-			/* border: red dotted 2px; */
-			/* align-items: center; */
-			/* align-content: center; */
 			text-align: center;
-
+			position: relative;
+			right: -8vw;
 		}
 
 	}
@@ -3903,14 +3904,23 @@ color: #BA9E6F;
 
 			#footer .inner {
 				padding: 2em 2em 0.1em 2em ;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				text-align: start;
+				position: relative;
+				right: 10vw;
 			}
 
-				#footer .inner form {
+				/* #footer .inner form {
 					margin: 0 0 3em 0;
-				}
+				} */
 
 				#footer .inner .contact {
 					margin: 0 0 3em 2em;
+				}
+				#footer .inner a, #footer .inner p, #footer .inner .contact li {
+					font-size: 1.35em;
 				}
 				#footer .inner .contact li {
 					word-wrap: break-word;
@@ -3931,6 +3941,9 @@ color: #BA9E6F;
 		}
 		#footer .inner h2 {
 			font-size: 3em;
+			margin: 1em;
+			position: relative;
+			top: 2.5vh;
 		}
 
 		#footer .inner .contact {
@@ -3938,8 +3951,6 @@ color: #BA9E6F;
 			width: 100vw !important;
 			display: flex;
 			flex-direction: row;
-			align-content: flex-start;
-			justify-content: flex-start;
 
 		}
 		#page-wrapper{
@@ -3978,6 +3989,8 @@ color: #BA9E6F;
 
 		#footer .inner {
 			padding: 2em 1.5em 0.1em 1.5em ;
+			position: relative;
+			left: -10vw;
 		}
 
 	}
