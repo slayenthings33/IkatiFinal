@@ -2515,7 +2515,14 @@ color: #BA9E6F;
 		-webkit-transition: .3s ease-in-out;
 		transition: .3s ease-in-out;
 	}
-
+	.oversizedImage {
+		max-width: 315px;
+		padding-top: 20px;
+	}
+	.oversizedImageContainer {
+		display: flex;
+		justify-content: center;
+	}
 	.mainImage {
 		display: inline-block;
 		position: relative;
