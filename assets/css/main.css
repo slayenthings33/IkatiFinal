@@ -157,7 +157,7 @@ color: #BA9E6F;
 	}
 
 	body {
-		background-image:url("../../images/GroupPics/IkatiGirls.jpg");		
+		background-image:url("../../images/GroupPics/retroBallinPic.jpg");		
 		background-size: cover, cover;
 		background-attachment: fixed, fixed;
 		background-position: center, center;
@@ -3186,7 +3186,7 @@ color: #BA9E6F;
 		overflow: auto;
 		top: 0px;
 		left: 0px;
-		background: rgba(0, 0, 0, 0.5);
+		background: rgba(0, 0, 0, 0.4);
 	}
 
 /* Banner */
